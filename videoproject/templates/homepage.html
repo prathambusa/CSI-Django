@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+<!-- {% block title %}
+    <p>Hello this is title</p>
+{% endblock %} -->
+
+{% block content %}
+    <p>Hello this is different file</p>
+
+    {% for videotitle in title %}
+        {{videotitle.title}}
+        <br>
+    {% endfor %}
+
+{% endblock %}
